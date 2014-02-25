@@ -275,6 +275,15 @@ four51.app.filter('reNameVP', function() {
             case 'CompanyName':
                 fields = 'Company Name'
                 break;
+            case 'PhoneA':
+                fields = 'Phone Number'
+                break;
+            case 'PhoneNumbe':
+                fields = ''
+                break;
+            case 'PhoneE':
+                fields = ''
+                break;
 
 
 
