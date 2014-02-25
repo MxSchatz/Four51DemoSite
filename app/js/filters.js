@@ -116,6 +116,168 @@ four51.app.filter('reNameVP', function() {
             case 'V07_Price_Offer4':
                 fields = 'Price Offer 4'
                 break;
+            case 'PhonePrefix':
+                fields = 'Optional Phone'
+                break;
+            case 'PhoneAC':
+                fields = ''
+                break;
+            case 'PhoneNumber':
+                fields = ''
+                break;
+            case 'PhoneEX':
+                fields = ''
+                break;
+            case 'LocationDropdown':
+                fields = 'Select Your Location'
+                break;
+            case 'Backer':
+                fields = 'Select Backer Color'
+                break;
+            case 'Phone_ac':
+                fields = 'Telephone Number'
+                break;
+            case 'Phone_num':
+                fields = ''
+                break;
+            case 'Phone_ext':
+                fields = ''
+                break;
+            case 'Fax_ac':
+                fields = 'Telephone Number'
+                break;
+            case 'Fax_num':
+                fields = ''
+                break;
+            case 'Fax_ext':
+                fields = ''
+                break;
+            case 'FaxAC':
+                fields = 'Fax Number'
+                break;
+            case 'FaxNumber':
+                fields = ''
+                break;
+            case 'FaxEX':
+                fields = ''
+                break;
+            case 'V01_address':
+                fields = 'Address'
+                break;
+            case 'V02_Address2':
+                fields = 'Suite, Building, Apartment'
+                break;
+            case 'V03_city':
+                fields = 'City'
+                break;
+            case 'V04_ST':
+                fields = 'State'
+                break;
+            case 'V05_zip':
+                fields = 'Zip'
+                break;
+            case 'ConsecutiveNumber':
+                fields = 'Consecutive Number'
+                break;
+            case 'V06_phone_ac':
+                fields = ''
+                break;
+            case 'V06_phone_num':
+                fields = ''
+                break;
+            case 'V06_phone_ext':
+                fields = ''
+                break;
+            case 'V07_fax_ac':
+                fields = ''
+                break;
+            case 'V07_fax_num':
+                fields = ''
+                break;
+            case 'V07_fax_ext':
+                fields = ''
+                break;
+            case 'V08_info_num_num':
+                fields = ''
+                break;
+
+            case 'V08_info_num_ext':
+                fields = ''
+                break;
+
+            case 'V09_outstate_num':
+                fields = ''
+                break;
+
+            case 'V09_outstate_ext':
+                fields = ''
+                break;
+            case 'V10_TTY_num':
+                fields = ''
+                break;
+            case 'V10_TTY_ext':
+                fields = ''
+                break;
+            case 'V08_info_num_ac':
+                fields = 'Info Number'
+                break;
+            case 'V09_outstate_ac':
+                fields = 'Outside Area Contact'
+                break;
+            case 'V10_TTY_ac':
+                fields = 'TTY Contact Number'
+                break;
+            case 'website':
+                fields = 'Web Address'
+                break;
+            case 'V11_formnumber':
+                fields = 'Form Number'
+                break;
+            case 'NumberPlies':
+                fields = 'No. of Plies'
+                break;
+            case 'ColorPly1':
+                fields = 'Ply1'
+                break;
+            case 'ColorPly2':
+                fields = 'Ply2'
+                break;
+            case 'ColorPly3':
+                fields = 'Ply 3'
+                break;
+            case 'ColorPly4':
+                fields = 'Ply 4'
+                break;
+            case 'ColorPly5':
+                fields = 'Ply 5'
+                break;
+            case 'V12_marginals':
+                fields = 'Ply1'
+                break;
+            case 'V13_Marginal2':
+                fields = 'Ply2'
+                break;
+            case 'V14_marginal3':
+                fields = 'Ply 3'
+                break;
+            case 'V15_marginal4':
+                fields = 'Ply 4'
+                break;
+            case 'V16_marginal5':
+                fields = 'Ply 5'
+                break;
+            case 'CampaignName':
+                fields = 'Campaign Name (for saving purposes only)'
+                break;
+            case 'PermitNumber':
+                fields = 'Number'
+                break;
+            case 'CompanyName':
+                fields = 'Company Name'
+                break;
+
+
+
 
 
 

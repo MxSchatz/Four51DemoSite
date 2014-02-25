@@ -1,0 +1,189 @@
+<section class="container specform-default">
+    <productnav editvariant="true" product="Product" variant="Variant" />
+
+    <div class="col-md-4 col-collapse" ng-hide="!Variant.PreviewUrl">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <figure>
+                    <img ng-src="{{Variant.PreviewUrl}}" />
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div ng-class="{'col-xs-12 col-collapse': !Variant.PreviewUrl, 'col-md-7 col-md-offset-1 col-collapse': Variant.PreviewUrl }">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span ng-show="Variant.PreviewUrl">Edit </span>{{Variant.ExternalID || 'Create New'}}</h3>
+            </div>
+            <br />
+            <div class="panel-body form-group">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customselectionfield customfield="Variant.Specs.LogoSelect"></customselectionfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V01_address"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V02_Address2"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V03_city"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V04_ST"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V05_zip"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.ConsecutiveNumber"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customselectionfield customfield="Variant.Specs.PhoneLabel"></customselectionfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V06_phone_ac"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V06_phone_num"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V06_phone_ext"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customselectionfield customfield="Variant.Specs.FaxLabel"></customselectionfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V07_fax_ac"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V07_fax_num"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V07_fax_ext"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V08_info_num_ac"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V08_info_num_num"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V08_info_num_ext"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V09_outstate_ac"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V09_outstate_num"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V09_outstate_ext"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V10_TTY_ac"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V10_TTY_num"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V10_TTY_ext"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.website"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.V11_formnumber"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customselectionfield customfield="Variant.Specs.NumberPlies"></customselectionfield>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <label>Ply Colors</label>
+                    <br />
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customselectionfield customfield="Variant.Specs.ColorPly1"></customselectionfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customselectionfield customfield="Variant.Specs.ColorPly2"></customselectionfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customselectionfield customfield="Variant.Specs.ColorPly3"></customselectionfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customselectionfield customfield="Variant.Specs.ColorPly4"></customselectionfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customselectionfield customfield="Variant.Specs.ColorPly5"></customselectionfield>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <label>Marginals</label>
+                    <br />
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customtextfield customfield="Variant.Specs.V12_marginals"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customtextfield customfield="Variant.Specs.V13_Marginal2"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customtextfield customfield="Variant.Specs.V14_marginal3"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customtextfield customfield="Variant.Specs.V15_marginal4"></customtextfield>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                        <customtextfield customfield="Variant.Specs.V16_marginal5"></customtextfield>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--<div id="451_list_vspec" ng-show="true">-->
+            <!--<div class="form-group" ng-repeat="s in Variant.Specs | onproperty:[{Property: 'CanSetForLineItem', Value: false}, {Property: 'DefinesVariant', Value: false}]">-->
+            <!--<customfilefield customfield="s" ng-if="s.ControlType == 'File'"></customfilefield>-->
+            <!--<customtextfield customfield="s" ng-if="s.ControlType == 'Text'"></customtextfield>-->
+            <!--<customselectionfield customfield="s" ng-if="s.ControlType == 'Selection'" class="row"></customselectionfield>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-primary pull-right" type="submit" ng-click="save()">Save</button>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+
+
+

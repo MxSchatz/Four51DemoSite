@@ -1,0 +1,98 @@
+<section class="container specform-default">
+    <productnav editvariant="true" product="Product" variant="Variant" />
+
+    <div class="col-md-4 col-collapse" ng-hide="!Variant.PreviewUrl">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <figure>
+                    <img ng-src="{{Variant.PreviewUrl}}" />
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div ng-class="{'col-xs-12 col-collapse': !Variant.PreviewUrl, 'col-md-7 col-md-offset-1 col-collapse': Variant.PreviewUrl }">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span ng-show="Variant.PreviewUrl">Edit </span>{{Variant.ExternalID || 'Create New'}}</h3>
+            </div>
+            <br />
+            <div class="panel-body form-group">
+                <div class="row">
+                    <label>USPS Permit Information</label>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.PermitNumber"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.City"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.State"></customtextfield>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <label>Reply Address</label>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.Name"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.CompanyName"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.Address1"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.Address2"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.City"></customtextfield>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <customtextfield customfield="Variant.Specs.State"></customtextfield>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                        <label>Zip</label>
+                        <input ng-model="Variant.Specs.Zip.Value" type="tel" class="form-control" ui-mask="{{'99999-9999'}}"/>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--<div id="451_list_vspec" ng-show="true">-->
+            <!--<div class="form-group" ng-repeat="s in Variant.Specs | onproperty:[{Property: 'CanSetForLineItem', Value: false}, {Property: 'DefinesVariant', Value: false}]">-->
+            <!--<customfilefield customfield="s" ng-if="s.ControlType == 'File'"></customfilefield>-->
+            <!--<customtextfield customfield="s" ng-if="s.ControlType == 'Text'"></customtextfield>-->
+            <!--<customselectionfield customfield="s" ng-if="s.ControlType == 'Selection'" class="row"></customselectionfield>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-primary pull-right" type="submit" ng-click="save()">Save</button>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+
+
+

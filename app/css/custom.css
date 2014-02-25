@@ -12,5 +12,9 @@
   font-size: 55px;
   font-style: italic;
   color:black;
+}
 
+.extratext2{
+    margin-top: 30px;
+    text-align: left;
 }
