@@ -284,6 +284,9 @@ four51.app.filter('reNameVP', function() {
             case 'PhoneE':
                 fields = ''
                 break;
+            case 'A2_imageSelect':
+                fields = 'Image Select'
+                break;
 
 
 
